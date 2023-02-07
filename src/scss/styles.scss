@@ -1,0 +1,75 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+img {
+    max-width: 7rem;
+}
+
+.nav {
+    button {
+        width: 75%;
+    }
+}
+
+#period-tab-btns {
+    li{
+        :hover{
+            background-color: $primary;
+            color: $light;
+            }
+        button{
+            width: 100%;
+        }
+    }
+}
+
+#chartdiv {
+    width: 100%;
+    height: 98vh;
+}
+
+#now-tab-data {
+    #now-tab-data-body {
+            #weather-icon{
+                transform: scale(3);
+            }
+            #metrics-btns{
+                button:hover{
+                    background-color: $dark;
+                    color: $light;
+                }
+            }
+    }
+}
+
+#container {
+    min-height:100%;
+    background-image: linear-gradient(to bottom , white, rgb(174, 217, 236));
+}
+
+.accordion-body {
+    font-size: small;
+}
+
+.footer {
+    height:40px;
+    margin-top:-40px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 75vh;
+    width: 75vw;
+}
+
+.swal2-popup {
+  font-size: 0.6rem !important;
+  font-family: Georgia, serif;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="./main.js" defer></script>
+    <title>Cloudy Home Page</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <div id="container" class="d-flex flex-column align-items-center gap-3">
+        <div id="header"
+            class="d-flex flex-sm-row flex-column bg-dark align-items-center justify-content-between w-100 shadow p-1 gap-5">
+            <form id="search-form" class="d-flex gap-2 flex-grow-1" method="POST">
+                <button id="my-location-btn" type="submit" class="btn btn-secondary" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-title="My Location">
+                    <i class="bi bi-geo-alt"></i>
+                </button>
+                <div class="input-group">
+                    <span class="input-group-text bg-warning text-bg-danger"><i class="bi bi-globe-americas"></i></span>
+                    <input id="search-location" class="form-control" list="locations-list" type="search"
+                        placeholder="Type to search..." />
+                    <datalist id="locations-list"></datalist>
+                </div>
+                <button id="search-btn" name="search"
+                    class="btn btn-outline-success gap-2 d-flex justify-content-around fw-bold"
+                    onclick="this.form.submitted=this.name;" type="submit">
+                    <i class="bi bi-search"></i>
+                    <span>Search</span>
+                </button>
+            </form>
+        </div>
+        <ul class="nav nav-pills d-flex justify-content-evenly gap-3 border border-1 border-primary bg-primary-subtle rounded-5"
+            id="period-tab-btns" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5 active" id="now-tab" data-bs-toggle="pill"
+                    data-bs-target="#now-tab-data" type="button" role="tab" aria-selected="true">
+                    Now
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" id="hours-to-days-tab" data-bs-toggle="pill"
+                    data-bs-target="#hours-to-days-tab-data" type="button" role="tab" aria-selected="false">
+                    3 Hours / 5 Days Forecast
+                </button>
+            </li>
+        </ul>
+        <div class="btn-group" id="units-btns" role="group" aria-label="metric button group">
+            <input type="radio" class="btn-check" name="btnradios1" id="celsius" autocomplete="off" checked />
+            <label class="btn btn-outline-primary" for="celsius">°C</label>
+
+            <input type="radio" class="btn-check" name="btnradios1" id="fahrenheit" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="fahrenheit">°F</label>
+        </div>
+        <div class="period-tab-data d-flex flex-column gap-3 align-items-center justify-content-center w-75 pb-5"
+            id="tabs-data"></div>
+    </div>
+
+    <footer class="bg-dark bg-gradient text-center text-lg-start">
+        <div class="text-white text-center p-3 fw-bold">
+            © 2023 Copyright: mhdsulaimantan
+            <a class="fs-4" href="https://github.com/mhdsulaimantan"><i class="bi bi-github"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
