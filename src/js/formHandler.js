@@ -19,7 +19,6 @@ const searchBtnHandler = () => {
 
         const location = domElements.locationInput.value;
         const geoCoord = await getLocationData(location);
-        console.log(geoCoord);
         if (geoCoord) {
             sessionStorage.setItem("loc", JSON.stringify(geoCoord));
             
