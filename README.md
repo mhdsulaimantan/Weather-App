@@ -7,13 +7,13 @@ This is a small weather website that allow users to check the weather status in 
 1. The user can get weather details for a specific location:
     - Temperature
     - Max Temperature
-    - Min Tempreature
+    - Min Temperature
     - Feels Lile Temperature
     - Humidity
     - Wind Speed
 2. The user can fetch their location's data or search for a location.
 3. The user can get the data in both Celsius and Fahrenheit metrics.
-4. The user can get weather data **Now** or **3 Hours / 5 Days Forecast**.
+4. The user can get weather data **Now** or in **3 Hours / 5 Days Forecast**.
 5. **3 Hours / 5 Days Forecast**: The data can be viewed both in Table and Chart views.
 
 ### Live Preview:
