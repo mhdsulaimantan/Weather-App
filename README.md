@@ -1,7 +1,7 @@
 # Weather-App
 
-### Desciption:
-This is a small weather website that allow users to check the weather status in different regions. This is a solution for the [Odin project assignment](https://www.theodinproject.com/lessons/node-path-javascript-weather-app). The project was built using Javascript and Webpack (js bundler).
+### Description:
+This is a small weather website that allows users to check the weather status in different regions. This is a solution for the [Odin project assignment](https://www.theodinproject.com/lessons/node-path-javascript-weather-app). The project was built using JavaScript and Webpack (JS bundler).
 
 ### How it works:
 1. The user can get weather details for a specific location:
